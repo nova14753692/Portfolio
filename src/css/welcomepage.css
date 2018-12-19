@@ -1,0 +1,88 @@
+.bt-view-work {
+  border: none;
+  border-radius: 25px;
+  height: 60px;
+  width: 250px;
+  font-size: 24px;
+  transition: all 0.5s ease-out;
+}
+
+.bt-view-work:hover {
+  background-color: #0099ff;
+  color: #f7f7f7;
+}
+
+.welcome_line {
+  color: #d6d2d2;
+  font-size: 36px;
+}
+.welcome_line span {
+  color: #ff546b;
+}
+
+.welcome_block {
+  max-height: 20%;
+  max-width: 45%;
+  text-align: center;
+  animation: 0.5s ease-out 0s 1 slide-in-from-left, 1s ease-out 0s 1 fade-in;
+}
+
+.WelcomePage {
+  background: #262626;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.bt-view-work {
+  animation: 0.5s ease-out 0s 1 slide-up, 1s ease-out 0s 1 fade-in;
+}
+.bt-view-work span {
+  display: inline-block;
+  transition: transform 0.25s ease-in-out;
+}
+
+.bt-view-work:hover span {
+  transform: rotate(90deg);
+}
+
+.bt-view-work:not(:hover) span {
+  transform: rotate(0deg);
+}
+
+.bt-view-work:active,
+.bt-view-work:focus,
+.bt-view-work.active {
+  outline: 0;
+  -webkit-box-shadow: none;
+  -webkit-tap-highlight-color: #0099ff;
+  box-shadow: none;
+}
+
+@keyframes slide-in-from-left {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=welcomepage.css.map */
