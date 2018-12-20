@@ -1,3 +1,50 @@
+.bt-close-content {
+  border: none;
+  border-radius: 16px;
+  height: auto;
+  width: auto;
+  font-size: 24px;
+  transition: all 0.5s ease-in-out;
+}
+
+.bt-close-content:hover {
+  background-color: #ff546b;
+  color: #d6d2d2;
+}
+
+.bt-sm:active,
+.bt-sm:focus,
+.bt-sm.active {
+  outline: 0;
+  -webkit-box-shadow: none;
+  -webkit-tap-highlight-color: #0099ff;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .bt-sm {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+}
+@media (min-width: 768px) {
+  .bt-sm {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+@media (min-width: 992px) {
+  .bt-sm {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .bt-sm {
+    padding: 10px 16px;
+    font-size: 18px;
+  }
+}
 .Contact {
   background-color: #262626;
   display: flex;
@@ -10,6 +57,30 @@
   margin-top: 6vh;
   color: #d6d2d2;
   font-size: 3em;
+}
+
+.contact-content {
+  border: 2px solid red;
+  width: 80%;
+  height: 70vh;
+}
+
+.bt-close-content {
+  background-color: #d6d2d2;
+  max-width: 3vw;
+  max-height: 3vw;
+  min-width: 50px;
+  min-height: 50px;
+  padding: 0.5vw;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+.bt-close-content img {
+  max-width: 70%;
+  max-height: 70%;
+  display: block;
 }
 
 /*# sourceMappingURL=contact.css.map */

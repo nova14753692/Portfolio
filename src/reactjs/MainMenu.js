@@ -30,7 +30,7 @@ class MainMenu extends Component {
     render() {
         return (
             <div className="MainMenu">
-                <div className="row">
+                <div className="row menu-row">
                     <div className="col-auto">
                         <button className="bt-menu" onClick={this.welcomePage}><a className="menu-text">HOME</a></button>
                     </div>

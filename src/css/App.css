@@ -1,9 +1,9 @@
-#welcome-page, .content, .main-menu {
+#welcome-page, .content {
     padding: 0;
     z-index: 0;
 }
 
-.content {
+#content {
     display: none;
 }
 
@@ -12,6 +12,7 @@
 }
 
 .main-menu {
+    padding: 0;
     display: none;
 }
 

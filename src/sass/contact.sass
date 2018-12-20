@@ -1,5 +1,5 @@
-@import color
 @import value
+@import button1-sm
 
 .Contact
     background-color: $dark-text
@@ -12,3 +12,28 @@
     margin-top: $menu-height + 1vh
     color: $normal-text
     font-size: 3em
+
+.contact-content
+    border: 2px solid red
+    width: 80%
+    height: 70vh
+
+.bt-close-content
+    @extend %button1-sm-style
+    background-color: $normal-text
+    max-width: 3vw
+    max-height: 3vw
+    min-width: 50px
+    min-height: 50px
+    padding: 0.5vw
+    display: flex
+    align-content: center
+    justify-content: center
+    margin-top: 2%
+    img
+        max-width: 70%
+        max-height: 70%
+        display: block
+
+.bt-close-content:hover
+    @extend %button1-sm-style-hover
