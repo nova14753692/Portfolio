@@ -1,0 +1,68 @@
+@import color
+
+%button-menu-style
+    background-color: rgba(0, 0, 0, 0)
+    border: none
+    border-radius: 25px
+    height: auto
+    width: auto
+    font-size: 24px
+    color: $normal-text
+    transition: all 0.3s ease-in-out
+
+%button-menu-style-hover
+    color: $comfort-red-text
+    font-weight: 500
+    padding-left: 2vw
+    padding-right: 2vw
+
+%menu-text-before
+    content: ""
+    position: absolute
+    width: 100%
+    height: 2px
+    bottom: 20%
+    left: 0
+    background-color: $comfort-red-text
+    visibility: hidden
+    -webkit-transform: scaleX(0)
+    -o-transform: scaleX(0)
+    -moz-transform: scaleX(0)
+    transform: scaleX(0)
+    -webkit-transition: all 0.3s ease-in-out 0s
+    -o-transition: all 0.3s ease-in-out 0s
+    -moz-transition: all 0.3s ease-in-out 0s
+    transition: all 0.3s ease-in-out 0s
+
+%menu-text-hover-before
+    visibility: visible
+    -webkit-transform: scaleX(1)
+    transform: scaleX(1)
+
+.bt-menu:active,
+.bt-menu:focus,
+.bt-menu.active
+    outline: 0
+    -webkit-box-shadow: none
+    -webkit-tap-highlight-color: $comfort-red-text
+    box-shadow: none
+
+@media (max-width: 768px)
+    .bt-menu
+        font-size: 12px
+        padding: 4px 10px
+  
+@media (min-width: 768px)
+    .bt-menu
+        font-size: 14px
+        padding: 6px 18px
+  
+@media (min-width: 992px)
+    .bt-menu
+        font-size: 16px
+        padding: 8px 20px
+  
+@media (min-width: 1200px)
+    .bt-menu
+        font-size: 18px
+        padding: 10px 24px

@@ -10,7 +10,7 @@ class WelcomePage extends Component {
     }
 
     btViewClick = () => {
-        this.props.showAbout();
+        this.props.openContent();
     }
 
     render() {
@@ -22,7 +22,9 @@ class WelcomePage extends Component {
                             Hello, I'm <span>Ton Tran</span>
                             <br/>I'm currently senior Computer Science student
                         </p>
-                        <button type="button" className="bt-view-work" onClick={this.btViewClick}>View my works <span>🡺</span></button>
+                        <button type="button" className="bt bt-view-work" onClick={this.btViewClick}>
+                            View my works <span>🡺</span>
+                        </button>
                     </div>
                 </div>
             </div>

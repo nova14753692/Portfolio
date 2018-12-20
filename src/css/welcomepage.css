@@ -1,17 +1,49 @@
 .bt-view-work {
   border: none;
   border-radius: 25px;
-  height: 60px;
-  width: 250px;
-  font-size: 24px;
-  transition: all 0.5s ease-out;
+  height: auto;
+  width: auto;
+  transition: all 0.5s ease-in-out;
 }
 
 .bt-view-work:hover {
-  background-color: #0099ff;
-  color: #f7f7f7;
+  background-color: #ff546b;
+  color: #d6d2d2;
 }
 
+.bt:active,
+.bt:focus,
+.bt.active {
+  outline: 0;
+  -webkit-box-shadow: none;
+  -webkit-tap-highlight-color: #ff546b;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .bt {
+    font-size: 12px;
+    padding: 4px 12px;
+  }
+}
+@media (min-width: 768px) {
+  .bt {
+    font-size: 16px;
+    padding: 6px 16px;
+  }
+}
+@media (min-width: 992px) {
+  .bt {
+    font-size: 20px;
+    padding: 8px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .bt {
+    font-size: 24px;
+    padding: 10px 24px;
+  }
+}
 .welcome_line {
   color: #d6d2d2;
   font-size: 36px;
@@ -28,14 +60,20 @@
 }
 
 .WelcomePage {
-  background: #262626;
+  background-color: #262626;
   display: flex;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(-45deg, black, #242424, #383838, #737373, #d6d2d2);
+  background-size: 400% 400%;
+  -webkit-animation: 10s ease-in-out 0s infinite Gradient;
+  -moz-animation: 10s ease-in-out 0s infinite Gradient;
+  animation: 10s ease-in-out 0s infinite Gradient;
 }
 
 .bt-view-work {
+  font-weight: 500;
   animation: 0.5s ease-out 0s 1 slide-up, 1s ease-out 0s 1 fade-in;
 }
 .bt-view-work span {
@@ -49,15 +87,6 @@
 
 .bt-view-work:not(:hover) span {
   transform: rotate(0deg);
-}
-
-.bt-view-work:active,
-.bt-view-work:focus,
-.bt-view-work.active {
-  outline: 0;
-  -webkit-box-shadow: none;
-  -webkit-tap-highlight-color: #0099ff;
-  box-shadow: none;
 }
 
 @keyframes slide-in-from-left {
@@ -82,6 +111,17 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 

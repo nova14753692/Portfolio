@@ -1,12 +1,40 @@
+@import color
 
 %button1-style
     border: none
     border-radius: 25px
-    height: 60px
-    width: 250px
-    font-size: 24px
-    transition: all 0.5s ease-out
+    height: auto
+    width: auto
+    transition: all 0.5s ease-in-out
 
 %button1-style-hover
-    background-color: #0099ff
-    color: #f7f7f7
+    background-color: $comfort-red-text
+    color: $normal-text
+
+.bt:active,
+.bt:focus,
+.bt.active
+    outline: 0
+    -webkit-box-shadow: none
+    -webkit-tap-highlight-color: $comfort-red-text
+    box-shadow: none
+
+@media (max-width: 768px)
+    .bt
+        font-size: 12px
+        padding: 4px 12px
+  
+@media (min-width: 768px)
+    .bt
+        font-size: 16px
+        padding: 6px 16px
+  
+@media (min-width: 992px)
+    .bt
+        font-size: 20px
+        padding: 8px 20px
+  
+@media (min-width: 1200px)
+    .bt
+        font-size: 24px
+        padding: 10px 24px

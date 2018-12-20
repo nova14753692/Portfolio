@@ -1,0 +1,40 @@
+
+%button1-sm-style
+    border: none
+    border-radius: 25px
+    height: auto
+    width: auto
+    font-size: 24px
+    transition: all 0.5s ease-in-out
+
+%button1-sm-style-hover
+    background-color: #0099ff
+    color: #f7f7f7
+
+.bt-sm:active,
+.bt-sm:focus,
+.bt-sm.active
+    outline: 0
+    -webkit-box-shadow: none
+    -webkit-tap-highlight-color: #0099ff
+    box-shadow: none
+
+@media (max-width: 768px)
+    .bt-sm
+      font-size: 12px
+      padding: 4px 6px
+  
+@media (min-width: 768px)
+    .bt-sm
+      font-size: 14px
+      padding: 6px 12px
+  
+@media (min-width: 992px)
+    .bt-sm
+      font-size: 16px
+      padding: 8px 12px
+  
+@media (min-width: 1200px)
+    .bt-sm
+      padding: 10px 16px
+      font-size: 18px

@@ -1,7 +1,44 @@
-.container-fluid.App {
+#welcome-page, .content, .main-menu {
     padding: 0;
+    z-index: 0;
 }
 
-.about {
+.content {
     display: none;
+}
+
+.btn-warning {
+    width: 100px
+}
+
+.main-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .btn {
+      font-size:11px;
+      padding:4px 6px;
+    }
+}
+  
+@media (min-width: 768px) {
+    .btn {
+      font-size:12px;
+      padding:6px 12px;
+    }
+}
+  
+@media (min-width: 992px) {
+    .btn {
+      font-size:14px;
+      padding:8px 12px;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .btn {
+      padding:10px 16px;
+      font-size:18px;
+    }
 }
